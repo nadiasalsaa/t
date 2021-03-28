@@ -1,0 +1,9 @@
+.container {
+  margin: 0 2em;
+}
+
+@include for-desktop-up {
+  .container {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,59 @@
+.hero {
+  text-align: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+
+  &__header {
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+
+  &__header--light {
+    font-weight: 200;
+  }
+
+  &__body {
+    opacity: 0.6;
+  }
+}
+
+@include for-tablet-up {
+  .hero {
+    margin: 5em auto;
+    max-width: 65%;
+
+    &__header {
+      font-size: 1.6rem;
+      margin-bottom: 1em;
+      line-height: 1.5;
+    }
+  }
+}
+
+@include for-desktop-up {
+  .hero {
+    max-width: 40%;
+    &__header {
+      font-size: 2rem;
+      margin-bottom: 0.5em;
+      line-height: 1.5;
+    }
+  }
+}
+
+@include for-big-desktop-up {
+  .hero {
+    max-width: 35%;
+    &__header {
+      font-size: 2.2rem;
+      margin-bottom: 0.5em;
+      line-height: 1.5;
+    }
+
+    &__body {
+      margin: 0 auto;
+      max-width: 80%;
+    }
+  }
+}
